@@ -8,15 +8,12 @@ public class Main {
     private static String JDBC_DRIVER = "com.cloudera.impala.jdbc41.Driver";
     private static String CONNECTION_URL ="jdbc:hive2://hadoop334.photo.163.org:2181,hadoop335.photo.163.org:2181,hadoop336.photo.163.org:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=impala-ha/hiveserver2;principal=impala/_HOST@TEST.HZ.NETEASE.COM";
 
-    static {
-        try {
-            Class.forName(JDBC_DRIVER);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     public static void main(String[] args) throws Exception {
+        Class.forName(JDBC_DRIVER);
+
+
+
         Connection connection = null;
         ResultSet rs = null;
         PreparedStatement ps = null;
