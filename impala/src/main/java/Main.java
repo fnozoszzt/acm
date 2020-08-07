@@ -11,6 +11,8 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         Class.forName(JDBC_DRIVER);
+        Class.forName("org.apache.hive.jdbc.HiveDriver");
+
 
 
 
