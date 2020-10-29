@@ -38,7 +38,7 @@ public class Main {
 
         for (int i = 0; i < 10; i++) {
             long start = System.currentTimeMillis();
-            loginUser.doAs((PrivilegedAction<Object>) () -> {
+            //loginUser.doAs((PrivilegedAction<Object>) () -> {
 
                 try {
 
@@ -49,8 +49,8 @@ public class Main {
                 } finally {
                     // JDBCUtils.disconnect(connection, rs, ps);
                 }
-                return null;
-            });
+            //    return null;
+            //});
 
 
             ps = connection[0].prepareStatement("select * from intern_new.xuxuerui_test_table");

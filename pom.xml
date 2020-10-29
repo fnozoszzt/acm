@@ -5,18 +5,34 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>xuxuerui</groupId>
-    <artifactId>acm</artifactId>
+    <artifactId>fnozoszzt-project</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
 
 
+<!--    <modules>-->
+<!--        <module>fnozoszzt-project-impala</module>-->
+<!--        <module>fnozoszzt-project-acm</module>-->
+<!--        <module>fnozoszzt-project-demo</module>-->
+<!--        <module>fnozoszzt-project-jdbc</module>-->
+<!--        <module>fnozoszzt-project-kubernetes</module>-->
+<!--    </modules>-->
+
     <modules>
         <module>impala</module>
-        <module>project</module>
+        <module>acm</module>
+        <module>demo</module>
+        <module>jdbc</module>
+        <module>kubernetes</module>
+        <module>base</module>
+        <module>use1</module>
+        <module>use2</module>
+        <module>work</module>
     </modules>
 
 
-    <dependencies>
+    <dependencyManagement>
+        <dependencies>
         <dependency>
             <groupId>com.drewnoakes</groupId>
             <artifactId>metadata-extractor</artifactId>
@@ -227,7 +243,8 @@
 <!--            <version>3.14</version>&lt;!&ndash;$NO-MVN-MAN-VER$&ndash;&gt;-->
 <!--        </dependency>-->
 
-    </dependencies>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>

@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>acm</artifactId>
+        <artifactId>fnozoszzt-project</artifactId>
         <groupId>xuxuerui</groupId>
         <version>1.0</version>
     </parent>
 
     <groupId>xuxuerui</groupId>
-    <artifactId>project</artifactId>
+    <artifactId>fnozoszzt-project-acm</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
 
