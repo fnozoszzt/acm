@@ -1,5 +1,3 @@
-package leetcode;
-
 import java.util.HashSet;
 
 public class _1 {

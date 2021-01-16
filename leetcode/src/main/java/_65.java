@@ -1,5 +1,3 @@
-package leetcode;
-
 import java.util.ArrayList;
 
 public class _65 {
